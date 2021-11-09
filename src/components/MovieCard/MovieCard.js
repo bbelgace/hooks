@@ -1,5 +1,6 @@
 import "./MovieCard.css";
 import Rate from "../Rate";
+import { Link } from "react-router-dom";
 const MovieCard = ({
   movie: { image, name, date, rating, type, description },
 }) => {
@@ -25,7 +26,7 @@ const MovieCard = ({
           <a href="https://www.imdb.com/?ref_=nv_home">Read More</a>
         </div>
         <div className="card_right__button">
-          <a href="#!">WATCH TRAILER</a>
+          <Link to="/">WATCH TRAILER</Link>
         </div>
       </div>
     </div>
